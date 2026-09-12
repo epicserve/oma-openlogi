@@ -1,0 +1,8 @@
+# Nothing runtime lives here; the widget keeps no state on disk.
+*.bak
+*.swp
+*~
+.DS_Store
+.idea/
+.vscode/
+.claude/

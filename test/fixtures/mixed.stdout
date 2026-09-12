@@ -1,0 +1,8 @@
+Logi Bolt Receiver (0123456789ABCDEF, vid=046d pid=c548)
+  ├─ slot 1 ○ MX Master 3S (mouse, wpid=4082, battery=—)
+  │       model_ids=[4082,0000,0000] ext=02 serial=SN123 unit_id=00010203 transports=usb+btle+bt
+  ├─ slot 2 ● Unknown device (mouse, wpid=?, battery=—)
+  ├─ slot 3 ● MX Master 4 (mouse, wpid=b042, battery=10% critical (chargingslow))
+  │       model_ids=[b042,0000,0000] ext=00 serial=2502XYZ0GHI2 unit_id=22cc33dd transports=btle
+  └─ slot 4 ● MX MCHNCL M (keyboard, wpid=b367, battery=60% good (discharging))
+          model_ids=[b367,0000,0000] ext=00 serial=— unit_id=00aa11bb transports=—

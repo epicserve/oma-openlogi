@@ -1,0 +1,1 @@
+(no agent reachable — reading hardware directly; macOS judges this process's Input Monitoring grant, not the agent's)

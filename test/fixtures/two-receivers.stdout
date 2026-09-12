@@ -1,0 +1,6 @@
+Logi Bolt Receiver (0123456789ABCDEF, vid=046d pid=c548)
+  ├─ slot 3 ● MX MCHNCL M (keyboard, wpid=b367, battery=95% full (discharging))
+  └─ slot 4 ● MX Master 4 (mouse, wpid=b042, battery=85% full (discharging))
+
+Unifying Receiver (—, vid=046d pid=c52b)
+  └─ slot 1 ● M720 Triathlon (mouse, wpid=405e, battery=50% good (discharging))

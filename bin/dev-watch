@@ -1,0 +1,14 @@
+#!/bin/bash
+# The shell's plugin watcher does not follow the symlink into this repo, so
+# rescan on every save while developing. Ctrl-C to stop.
+#
+# Panel.qml and Model.js pick up a rescan; Service.qml edits are cached by the
+# QML engine and need `omarchy restart shell`.
+set -euo pipefail
+here=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)
+echo "watching $here — saves trigger omarchy-shell shell rescanPlugins"
+inotifywait -m -r -q -e close_write,create,delete,move --exclude '/(\.git|test|node_modules)/' "$here" |
+  while read -r _; do
+    omarchy-shell -q shell rescanPlugins
+    printf '%s rescanned\n' "$(date +%T)"
+  done

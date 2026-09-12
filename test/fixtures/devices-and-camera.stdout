@@ -1,0 +1,8 @@
+Logi Bolt Receiver (0123456789ABCDEF, vid=046d pid=c548)
+  ├─ slot 3 ● MX MCHNCL M (keyboard, wpid=b367, battery=95% full (discharging))
+  │       model_ids=[b367,0000,0000] ext=00 serial=2201ABC0DEF1 unit_id=00aa11bb transports=btle
+  └─ slot 4 ● MX Master 4 (mouse, wpid=b042, battery=85% full (discharging))
+          model_ids=[b042,0000,0000] ext=00 serial=2502XYZ0GHI2 unit_id=22cc33dd transports=btle
+
+Cameras (1 Logitech UVC)
+  └─ ● Logitech BRIO (camera, vid=046d pid=085e, up to 4096x2160@30, id=usb-046d_085e-0:1)
