@@ -310,3 +310,9 @@ under this widget's bar entry):
 - **Low-battery notification hook** for peripherals, reusing the
   `battery-low.d` hook directory pattern and the widget's IPC `status()`.
 - **DPI quick-actions** only if the GUI round-trip proves annoying.
+- **Per-device click-through.** Clicking a row should open that device's
+  page in OpenLogi. Not possible at v0.8.3: no CLI args, the `openlogi://`
+  scheme has no device command and isn't delivered on Linux, and the
+  single-instance guard drops a second launch. Requested upstream as
+  https://github.com/AprilNEA/OpenLogi/issues/1375; the rows already
+  carry each device's serial for when it lands.

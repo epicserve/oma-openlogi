@@ -1,6 +1,7 @@
 # Upstream issue draft
 
-Target: https://github.com/AprilNEA/OpenLogi/issues/new?template=feature_request.yml
+Filed as https://github.com/AprilNEA/OpenLogi/issues/1375 on 2026-09-12.
+The text below is what was posted.
 
 Fill the template fields with the sections below. Facts were checked
 against tag `v0.8.3` (the version packaged as `openlogi-bin` on Arch) on
