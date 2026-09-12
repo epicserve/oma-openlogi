@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "brent.openlogi-battery",
+  "id": "epicserve.openlogi-battery",
   "name": "OpenLogi Battery",
   "version": "0.1.0",
   "author": "Brent O'Connor",

@@ -33,7 +33,7 @@ An Omarchy bar-widget plugin at `~/.config/omarchy/plugins/<id>/` with:
 - A footer button ("Open OpenLogi") that launches `openlogi-desktop`.
 - A background poll of `openlogi list` on an interval, parsed into a
   small device list, with last-good data kept across flaky reads.
-- An IPC target (`brent.openlogi-battery`) with `refresh()`, `status()`
+- An IPC target (`epicserve.openlogi-battery`) with `refresh()`, `status()`
   (JSON) and `launch()` so scripts and a future low-battery hook can use
   the same data.
 
@@ -205,7 +205,7 @@ Reuse from `/usr/share/omarchy/shell` rather than inventing:
 ```json
 {
   "schemaVersion": 1,
-  "id": "brent.openlogi-battery",
+  "id": "epicserve.openlogi-battery",
   "name": "OpenLogi Battery",
   "version": "0.1.0",
   "author": "Brent O'Connor",
@@ -234,7 +234,7 @@ schema entries) passes `omarchy plugin validate` for `brent.insta360`.
 ## File layout
 
 ```
-~/Code/personal/oma-openlogi/          (symlinked to ~/.config/omarchy/plugins/brent.openlogi-battery)
+~/Code/personal/oma-openlogi/          (symlinked to ~/.config/omarchy/plugins/epicserve.openlogi-battery)
 ├── manifest.json
 ├── Panel.qml        # Bar icon + popover UI
 ├── Service.qml      # Polling, watchdog, state machine
@@ -287,7 +287,7 @@ under this widget's bar entry):
 2. Scaffold `manifest.json`, `Service.qml`, `Panel.qml`; `install.sh`
    symlinks the repo, runs `omarchy plugin validate` against the real
    path (the validator refuses symlinks), `omarchy-shell shell
-   rescanPlugins`, and `omarchy plugin enable brent.openlogi-battery
+   rescanPlugins`, and `omarchy plugin enable epicserve.openlogi-battery
    right --before omarchy.bluetooth`.
 3. Wire the real poll, verify all states by hand: normal, `systemctl
    --user stop openlogi-agent` (agent down), receiver unplugged (if

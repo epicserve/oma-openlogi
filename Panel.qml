@@ -9,8 +9,8 @@ import "Model.js" as Model
 // row per paired device and a button through to the full OpenLogi app.
 Panel {
   id: root
-  moduleName: "brent.openlogi-battery"
-  ipcTarget: "brent.openlogi-battery"
+  moduleName: "epicserve.openlogi-battery"
+  ipcTarget: "epicserve.openlogi-battery"
   // Own the IpcHandler so refresh/status/launch can sit beside the popup ones.
   manageIpc: false
 

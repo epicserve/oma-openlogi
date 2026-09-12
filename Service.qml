@@ -108,7 +108,7 @@ Item {
       parseFailed = true
       lastError = ""
       stale = hasDevices
-      console.warn("brent.openlogi-battery: could not parse `openlogi list` output:\n" + String(stdout || "").slice(0, 600))
+      console.warn("epicserve.openlogi-battery: could not parse `openlogi list` output:\n" + String(stdout || "").slice(0, 600))
       return
     }
 

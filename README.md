@@ -1,4 +1,4 @@
-# brent.openlogi-battery
+# epicserve.openlogi-battery
 
 An [Omarchy](https://omarchy.org) bar widget that shows battery levels for
 Logitech devices managed by [OpenLogi](https://github.com/AprilNEA/OpenLogi),
@@ -36,13 +36,13 @@ git clone https://github.com/epicserve/oma-openlogi ~/Code/personal/oma-openlogi
 `install.sh` symlinks the repo into `~/.config/omarchy/plugins/`,
 validates the manifest, rescans plugins, and enables the widget to the
 left of the Bluetooth icon. Move it afterwards with
-`omarchy bar move brent.openlogi-battery --after omarchy.tray` or by
+`omarchy bar move epicserve.openlogi-battery --after omarchy.tray` or by
 editing `~/.config/omarchy/shell.json`.
 
 ## Settings
 
 Set per widget in `~/.config/omarchy/shell.json`, or with
-`omarchy bar set brent.openlogi-battery <key> <value>`:
+`omarchy bar set epicserve.openlogi-battery <key> <value>`:
 
 | Key | Default | Meaning |
 |---|---|---|
@@ -52,10 +52,10 @@ Set per widget in `~/.config/omarchy/shell.json`, or with
 ## IPC
 
 ```bash
-omarchy-shell brent.openlogi-battery toggle    # open/close the popover
-omarchy-shell brent.openlogi-battery refresh   # poll now
-omarchy-shell brent.openlogi-battery launch    # open the OpenLogi app
-omarchy-shell brent.openlogi-battery status    # JSON: devices, agent state, lowest battery
+omarchy-shell epicserve.openlogi-battery toggle    # open/close the popover
+omarchy-shell epicserve.openlogi-battery refresh   # poll now
+omarchy-shell epicserve.openlogi-battery launch    # open the OpenLogi app
+omarchy-shell epicserve.openlogi-battery status    # JSON: devices, agent state, lowest battery
 ```
 
 ## States
